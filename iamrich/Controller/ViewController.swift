@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     //PROPERTIES
-    
     // Connection -> Outlet (Las outlets son las properties)
     //Storage (almacenamiento) debil - weak
     // @IBOutlet -> referencia interna para indicar a xcode que hace referencia a un objeto del storyboard
@@ -40,7 +39,6 @@ class ViewController: UIViewController {
             
             self.labelTitle.text = "I AM POOR!"
             self.imageViewDiamond.image = UIImage(named: "no-money-1")
-            
             //self.labelTitle.textColor = UIColor.red
             //self.labelTitle.font = UIFont.systemFont(ofSize: 24.0)
             //print(self.buttonPush.title(for: .focused))
@@ -94,7 +92,7 @@ class ViewController: UIViewController {
             controller.title = "I AM POOR!"
             controller.message = """
             A contented man is never poor,
-            A humble man is never arrogant.
+            a humble man is never arrogant.
             """
         }
         self.show(controller, sender: nil)
