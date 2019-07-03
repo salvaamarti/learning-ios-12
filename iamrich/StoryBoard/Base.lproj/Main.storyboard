@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rubi" translatesAutoresizingMaskIntoConstraints="NO" id="eS0-v2-odF">
+                                <rect key="frame" x="102" y="248" width="171.5" height="171.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I AM RICH!" textAlignment="center" lineBreakMode="clip" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uoo-K2-XsC">
+                                <rect key="frame" x="55.5" y="146" width="264.5" height="82"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="51"/>
+                                <color key="textColor" red="0.14274999499320984" green="0.70628517866134644" blue="0.75385278463363647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqj-gn-YDS">
+                                <rect key="frame" x="102.5" y="454.5" width="170" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" red="0.14274999499999999" green="0.70628517869999996" blue="0.75385278460000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CHANGE"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMR-VN-9RG"/>
+                                    <action selector="despulsar:" destination="BYZ-38-t0r" eventType="valueChanged" id="qbG-vv-Z6o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjX-p4-k3k">
+                                <rect key="frame" x="264" y="606" width="95" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Message"/>
+                                <connections>
+                                    <action selector="messagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2L-Wu-Zhg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.75043290080000002" blue="0.0017316030310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GjX-p4-k3k" secondAttribute="trailing" constant="16" id="28z-fS-dnn"/>
+                            <constraint firstItem="Tqj-gn-YDS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Kg-GA-3WV"/>
+                            <constraint firstItem="eS0-v2-odF" firstAttribute="top" secondItem="Uoo-K2-XsC" secondAttribute="bottom" constant="20" id="d7j-Fx-DZV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GjX-p4-k3k" secondAttribute="bottom" constant="20" id="ncP-PS-w4P"/>
+                            <constraint firstItem="eS0-v2-odF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rGl-cI-3vs"/>
+                            <constraint firstItem="eS0-v2-odF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tb5-Hw-t4G"/>
+                            <constraint firstItem="Uoo-K2-XsC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDf-Gg-RQZ"/>
+                            <constraint firstItem="Tqj-gn-YDS" firstAttribute="top" secondItem="eS0-v2-odF" secondAttribute="bottom" constant="35" id="wIf-Em-Eqi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="Tqj-gn-YDS" id="T8l-85-1Hx"/>
+                        <outlet property="imageViewDiamond" destination="eS0-v2-odF" id="290-dj-zpc"/>
+                        <outlet property="labelTitle" destination="Uoo-K2-XsC" id="v6U-HH-Kv1"/>
+                        <outlet property="messageButton" destination="GjX-p4-k3k" id="yPK-UL-qyz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rubi" width="171.5" height="171.5"/>
+    </resources>
+</document>
