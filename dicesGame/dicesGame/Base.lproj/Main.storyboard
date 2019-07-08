@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dicesGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokerCarpet" translatesAutoresizingMaskIntoConstraints="NO" id="qnm-Rr-qRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal Casino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-Ci-NKc">
+                                <rect key="frame" x="44.666666666666657" y="130" width="285.66666666666674" height="62.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-wF-alp">
+                                <rect key="frame" x="17.666666666666657" y="242.33333333333334" width="340" height="98.666666666666657"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-1" translatesAutoresizingMaskIntoConstraints="NO" id="qim-Xq-cmw">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="98.666666666666671"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-3" translatesAutoresizingMaskIntoConstraints="NO" id="kc5-Bj-Ll0">
+                                        <rect key="frame" x="120" y="0.0" width="100" height="98.666666666666671"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-5" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-0l-fWW">
+                                        <rect key="frame" x="240" y="0.0" width="100" height="98.666666666666671"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-0e-8XN">
+                                <rect key="frame" x="129" y="673" width="117" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VO3-sL-ihn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qnm-Rr-qRQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6K5-VV-UXy"/>
+                            <constraint firstItem="aT4-Ci-NKc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AMF-KY-r1p"/>
+                            <constraint firstAttribute="bottom" secondItem="qnm-Rr-qRQ" secondAttribute="bottom" id="DbQ-jm-J8E"/>
+                            <constraint firstItem="8M6-wF-alp" firstAttribute="top" secondItem="aT4-Ci-NKc" secondAttribute="bottom" constant="50" id="J10-ht-3SV"/>
+                            <constraint firstItem="qnm-Rr-qRQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M28-6k-ZB4"/>
+                            <constraint firstItem="qnm-Rr-qRQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RCo-oX-291"/>
+                            <constraint firstItem="8M6-wF-alp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WwV-3d-vAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aX4-0e-8XN" secondAttribute="bottom" constant="35" id="gHz-Hc-uhj"/>
+                            <constraint firstItem="aT4-Ci-NKc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-244.75" id="kqJ-jB-zmC"/>
+                            <constraint firstItem="aX4-0e-8XN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xae-Ed-miH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dice1" destination="qim-Xq-cmw" id="BYt-It-QtN"/>
+                        <outlet property="dice2" destination="kc5-Bj-Ll0" id="9ZZ-A9-Fkn"/>
+                        <outlet property="dice3" destination="P5A-0l-fWW" id="fEB-q1-g5P"/>
+                        <outlet property="labelRoyalCasino" destination="aT4-Ci-NKc" id="WDz-I7-uCf"/>
+                        <outlet property="playButton" destination="aX4-0e-8XN" id="dQH-XT-0ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.339901477832512"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="face-1" width="100" height="98.666664123535156"/>
+        <image name="face-3" width="100" height="98.666664123535156"/>
+        <image name="face-5" width="100" height="98.666664123535156"/>
+        <image name="pokerCarpet" width="168.33332824707031" height="204"/>
+    </resources>
+</document>
